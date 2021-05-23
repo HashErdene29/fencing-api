@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NewsApi</name>
+    </assembly>
+    <members>
+        <member name="M:NewsApi.Controllers.AuthController.Login(NewsApi.Models.CustomModels.LoginModel)">
+            <summary>
+            Хэрэглэгч нэвтрэх
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.BannerController.PostBanner(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Баннер бүртгэл
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.BannerController.DeleteBanner(System.Decimal)">
+            <summary>
+            Баннер устгах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.BannerController.ListBanner(NewsApi.Models.FilterModels.SearchBanner)">
+            <summary>
+            Баннерууд авах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.GetBanner">
+            <summary>
+            Хэрэглэгч баннер авах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.GetFlowNews">
+            <summary>
+            Хэрэглэгч урсдаг мэдээ авах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.GetConfig">
+            <summary>
+            Хэрэглэгч сайтын тохиргоо авах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.GetCategory">
+            <summary>
+            Хэрэглэгч ангилал авах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.GetNews(System.Decimal)">
+            <summary>
+            Хэрэглэгч мэдээ авах /хайх нэрээр, catid=0 бүгд/
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.GetTrend">
+            <summary>
+            Хэрэглэгч онцлох мэдээ авах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.GetTrendCard">
+            <summary>
+            Хэрэглэгч онцлох 12 aвах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.MostView">
+            <summary>
+            Хэрэглэгч hamgiin ih hun unshsan 12
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.MostShare">
+            <summary>
+            Хэрэглэгч hamgiin ih share 12
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.LastNews">
+            <summary>
+            Хэрэглэгч suuliin 6 medee
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.RelNews(System.Decimal,System.Decimal)">
+            <summary>
+            Хэрэглэгч relnews awah
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.CustomerController.GetNewsDetail(System.Decimal)">
+            <summary>
+            Хэрэглэгч мэдээний дэлгэрэнгүй
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.EditController.PostComment(NewsApi.Models.CustomModels.CommentModel)">
+            <summary>
+            Хэрэглэгч comment бичих
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.EditController.PostCommentLike(System.Decimal,System.Decimal)">
+            <summary>
+            Хэрэглэгч comment-d like unlike darah /like 1,0/
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.EditController.PostCommentView(System.Decimal,System.Boolean,System.Boolean)">
+            <summary>
+            Хэрэглэгч мэдээ үзэх, share, tweet
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.NewsController.PostNews(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Мэдээ бүртгэх
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.NewsController.DeleteNews(System.Decimal)">
+            <summary>
+            Мэдээ устгах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.NewsController.ListNews(NewsApi.Models.FilterModels.SearchNews)">
+            <summary>
+            Мэдээнүүд авах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.NewsController.PostNews(NewsApi.Models.CustomModels.FlowModel)">
+            <summary>
+            Урсдаг мэдээ бүртгэх
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.NewsController.DeleteFlow(System.Decimal)">
+            <summary>
+            Урсдаг мэдээ устгах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.NewsController.ListFlow(NewsApi.Models.FilterModels.SearchFlow)">
+            <summary>
+            Урсдаг мэдээнүүд авах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.SystemController.PostConfig(NewsApi.Models.CustomModels.ConfigModel)">
+            <summary>
+            Үндсэн мэдээлэл бүртгэх
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.SystemController.ConfigList">
+            <summary>
+            Үндсэн мэдээллийн жагсаалт
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.SystemController.DeleteConfig(System.Decimal)">
+            <summary>
+            Үндсэн мэдээлэл устгах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.SystemController.PostCategory(NewsApi.Models.CustomModels.CategoryModel)">
+            <summary>
+            Ангилал бүртгэх
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.SystemController.GetCategory">
+            <summary>
+            Ангилалын жагсаалт
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.SystemController.DeleteCategory(System.Decimal)">
+            <summary>
+            Ангилал устгах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.SystemController.Check">
+            <summary>
+            Amjilttai
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.TestController.EncryptStringAes(System.String,System.String)">
+            <summary>
+            Encrypt the given string using AES.  The string can be decrypted using 
+            DecryptStringAES().  The sharedSecret parameters must match.
+            </summary>
+            <param name="plainText">The text to encrypt.</param>
+            <param name="sharedSecret">A password used to generate a key for encryption.</param>
+        </member>
+        <member name="M:NewsApi.Controllers.TestController.DecryptStringAes(System.String,System.String)">
+            <summary>
+            Decrypt the given string.  Assumes the string was encrypted using 
+            EncryptStringAES(), using an identical sharedSecret.
+            </summary>
+            <param name="cipherText">The text to decrypt.</param>
+            <param name="sharedSecret">A password used to generate a key for decryption.</param>
+        </member>
+        <member name="M:NewsApi.Controllers.UserController.PostSignUp(NewsApi.Models.CustomModels.Signup)">
+            <summary>
+            Админ бүртгэл
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.UserController.PutUser(NewsApi.Models.CustomModels.Signup,System.Decimal)">
+            <summary>
+            Хэрэглэгчийн мэдээлэл засах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.UserController.PostUserImage(Microsoft.AspNetCore.Http.IFormFile,System.Decimal)">
+            <summary>
+            Хэрэглэгчийн зураг бүртгэх, засах
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.UserController.ListUser(NewsApi.Models.FilterModels.SearchUser)">
+            <summary>
+            Хэрэглэгчдийн жагсаалт
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.UserController.ChangePass(System.String,System.String)">
+            <summary>
+            Хэрэглэгч нууц үг солих (өөрөө)
+            </summary>
+        </member>
+        <member name="P:NewsApi.Utils.JwtIssuerOptions.Issuer">
+            <summary>
+            "iss" (Issuer) Claim
+            </summary>
+            <remarks>The "iss" (issuer) claim identifies the principal that issued the
+              JWT.  The processing of this claim is generally application specific.
+              The "iss" value is a case-sensitive string containing a StringOrURI
+              value.  Use of this claim is OPTIONAL.</remarks>
+        </member>
+        <member name="P:NewsApi.Utils.JwtIssuerOptions.Subject">
+            <summary>
+            "sub" (Subject) Claim
+            </summary>
+            <remarks> The "sub" (subject) claim identifies the principal that is the
+              subject of the JWT.  The claims in a JWT are normally statements
+              about the subject.  The subject value MUST either be scoped to be
+              locally unique in the context of the issuer or be globally unique.
+              The processing of this claim is generally application specific.  The
+              "sub" value is a case-sensitive string containing a StringOrURI
+              value.  Use of this claim is OPTIONAL.</remarks>
+        </member>
+        <member name="P:NewsApi.Utils.JwtIssuerOptions.Audience">
+            <summary>
+            "aud" (Audience) Claim
+            </summary>
+            <remarks>The "aud" (audience) claim identifies the recipients that the JWT is
+              intended for.  Each principal intended to process the JWT MUST
+              identify itself with a value in the audience claim.  If the principal
+              processing the claim does not identify itself with a value in the
+              "aud" claim when this claim is present, then the JWT MUST be
+              rejected.  In the general case, the "aud" value is an array of case-
+              sensitive strings, each containing a StringOrURI value.  In the
+              special case when the JWT has one audience, the "aud" value MAY be a
+              single case-sensitive string containing a StringOrURI value.  The
+              interpretation of audience values is generally application specific.
+              Use of this claim is OPTIONAL.</remarks>
+        </member>
+        <member name="P:NewsApi.Utils.JwtIssuerOptions.NotBefore">
+            <summary>
+            "nbf" (Not Before) Claim (default is UTC NOW)
+            </summary>
+            <remarks>The "nbf" (not before) claim identifies the time before which the JWT
+              MUST NOT be accepted for processing.  The processing of the "nbf"
+              claim requires that the current date/time MUST be after or equal to
+              the not-before date/time listed in the "nbf" claim.  Implementers MAY
+              provide for some small leeway, usually no more than a few minutes, to
+              account for clock skew.  Its value MUST be a number containing a
+              NumericDate value.  Use of this claim is OPTIONAL.</remarks>
+        </member>
+        <member name="P:NewsApi.Utils.JwtIssuerOptions.IssuedAt">
+            <summary>
+            "iat" (Issued At) Claim (default is UTC NOW)
+            </summary>
+            <remarks>The "iat" (issued at) claim identifies the time at which the JWT was
+              issued.  This claim can be used to determine the age of the JWT.  Its
+              value MUST be a number containing a NumericDate value.  Use of this
+              claim is OPTIONAL.</remarks>
+        </member>
+        <member name="P:NewsApi.Utils.JwtIssuerOptions.ValidFor">
+            <summary>
+            Set the timespan the token will be valid for (default is 5 min/300 seconds)
+            </summary>
+        </member>
+        <member name="P:NewsApi.Utils.JwtIssuerOptions.Expiration">
+            <summary>
+            "exp" (Expiration Time) Claim(returns IssuedAt + ValidFor)
+            </summary>
+            <remarks>The "exp" (expiration time) claim identifies the expiration time on
+              or after which the JWT MUST NOT be accepted for processing.The 
+              processing of the "exp" claim requires that the current date/time
+              MUST be before the expiration date/time listed in the "exp" claim.
+              Implementers MAY provide for some small leeway, usually no more than
+              a few minutes, to account for clock skew.Its value MUST be a number
+              containing a NumericDate value.  Use of this claim is OPTIONAL.</remarks>
+        </member>
+        <member name="P:NewsApi.Utils.JwtIssuerOptions.JtiGenerator">
+            <summary>
+            "jti" (JWT ID) Claim (default ID is a GUID)
+            </summary>
+            <remarks>The "jti" (JWT ID) claim provides a unique identifier for the JWT.
+              The identifier value MUST be assigned in a manner that ensures that
+              there is a negligible probability that the same value will be
+              accidentally assigned to a different data object; if the application
+              uses multiple issuers, collisions MUST be prevented among values
+              produced by different issuers as well.  The "jti" claim can be used
+              to prevent the JWT from being replayed.  The "jti" value is a case-
+              sensitive string.  Use of this claim is OPTIONAL.</remarks>
+        </member>
+        <member name="P:NewsApi.Utils.JwtIssuerOptions.SigningCredentials">
+            <summary>
+            The signing key to use when generating tokens.
+            </summary>
+        </member>
+    </members>
+</doc>
