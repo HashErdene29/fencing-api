@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bkhas\\projects\\intouch\\Hackathon\\NewsApi\\Hackathon.csproj": {}
+    "/Users/dorjbattumentsogt/Documents/GitHub/Duel-Fencing-api/Hackathon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bkhas\\projects\\intouch\\Hackathon\\NewsApi\\Hackathon.csproj": {
+    "/Users/dorjbattumentsogt/Documents/GitHub/Duel-Fencing-api/Hackathon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bkhas\\projects\\intouch\\Hackathon\\NewsApi\\Hackathon.csproj",
+        "projectUniqueName": "/Users/dorjbattumentsogt/Documents/GitHub/Duel-Fencing-api/Hackathon.csproj",
         "projectName": "Hackathon",
-        "projectPath": "C:\\Users\\bkhas\\projects\\intouch\\Hackathon\\NewsApi\\Hackathon.csproj",
-        "packagesPath": "C:\\Users\\bkhas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bkhas\\projects\\intouch\\Hackathon\\NewsApi\\obj\\",
+        "projectPath": "/Users/dorjbattumentsogt/Documents/GitHub/Duel-Fencing-api/Hackathon.csproj",
+        "packagesPath": "/Users/dorjbattumentsogt/.nuget/packages/",
+        "outputPath": "/Users/dorjbattumentsogt/Documents/GitHub/Duel-Fencing-api/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bkhas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/dorjbattumentsogt/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -182,12 +177,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.13, 3.1.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -196,7 +185,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
         }
       }
     }

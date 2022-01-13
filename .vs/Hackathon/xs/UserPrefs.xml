@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{DA0EC493-322E-4FB6-B70F-93494726B4E1}|Default">
+  <MonoDevelop.Ide.ItemProperties.Hackathon PreferredExecutionTarget="/Applications/Opera.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/WebController.cs">
+    <Files>
+      <File FileName="Program.cs" Line="26" Column="1" />
+      <File FileName="Hackathon.xml" />
+      <File FileName="appsettings.json" />
+      <File FileName="Startup.cs" />
+      <File FileName="Controllers/WebController.cs" Line="56" Column="49" />
+      <File FileName="Logics/AnketLogic.cs" />
+      <File FileName="Context/PostgreDbContext.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Hackathon" expanded="True">
+            <Node name="Hackathon" expanded="True">
+              <Node name="Context" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="WebController.cs" selected="True" />
+              </Node>
+              <Node name="Enum" expanded="True" />
+              <Node name="Logics" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="MedeeModels" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

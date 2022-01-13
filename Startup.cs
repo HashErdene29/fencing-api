@@ -156,7 +156,7 @@ namespace NewsApi
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "INTOUCH API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "FENCING API V1");
                 c.DocExpansion(DocExpansion.None);
             });
             app.UseStaticFiles(new StaticFileOptions()

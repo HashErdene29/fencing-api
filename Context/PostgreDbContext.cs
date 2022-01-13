@@ -17,17 +17,11 @@ namespace NewsApi.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Username=postgres;Password=dc2020;Database=Intouch;");
+                optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Username=postgres;Password=1234;Database=Fencing;");
             }
         }
         #region Sets
-        public virtual DbSet<USER> USERs { get; set; }
-        public virtual DbSet<CATEGORY> CATEGORYs { get; set; }
-        public virtual DbSet<FEEDBACK> FEEDBACKs { get; set; }
-        public virtual DbSet<JOB> JOBs { get; set; }
-        public virtual DbSet<JOBIMG> JOBIMGs { get; set; }
-        public virtual DbSet<ORDER> ORDERs { get; set; }
-        public virtual DbSet<BANNER> BANNERs { get; set; }
+        public virtual DbSet<MEDEE> MEDEEs { get; set; }
         #endregion
 
         #region Functions
