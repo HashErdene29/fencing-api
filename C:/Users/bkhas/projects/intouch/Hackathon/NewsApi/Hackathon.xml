@@ -6,7 +6,12 @@
     <members>
         <member name="M:NewsApi.Controllers.WebController.getNewsAll">
             <summary> 
-            category list
+            news list
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.WebController.setElselt(NewsApi.Models.ElseltModels.ElseltModel)">
+            <summary> 
+            elselt awah
             </summary>
         </member>
         <member name="P:NewsApi.Utils.JwtIssuerOptions.Issuer">

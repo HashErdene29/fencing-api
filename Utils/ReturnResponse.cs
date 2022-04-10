@@ -51,5 +51,10 @@ namespace NewsApi.Utils
                 && (o.GetType().GetGenericTypeDefinition().IsAssignableFrom(typeof(List<>))
                 || o.GetType().GetGenericTypeDefinition().IsAssignableFrom(typeof(IEnumerable<>)));
         }
+
+        internal static ResponseClient SuccessResponse()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

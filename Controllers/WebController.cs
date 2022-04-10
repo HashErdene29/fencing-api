@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NewsApi.Context;
-using NewsApi.Enum;
-using NewsApi.Logics;
-using NewsApi.Models.MedeeModels;
+using NewsApi.Models.ElseltModels;
 using NewsApi.Models;
 using NewsApi.Utils;
 using Newtonsoft.Json;
 using NewsApi.Utils;
+using System.Data;
 
 namespace NewsApi.Controllers
 {
@@ -37,7 +34,7 @@ namespace NewsApi.Controllers
 
         #region
         /// <summary> 
-        /// category list
+        /// news list
         /// </summary>
         [HttpGet]
         [Route("news")]
@@ -46,17 +43,57 @@ namespace NewsApi.Controllers
         {
             try
             {
-                var news = (from bau in _dbContext.MEDEEs
-                             select new MedeeModel
-                             {
-                                 ID = bau.ID,
-                                 TITLE = bau.TITLE,
-                                 DESCRIPTION = bau.DESCRIPTION,
-                                 FEATURETXT = bau.FEATURETXT,
-                                 IMG = bau.IMAGE
-                             }).ToList();
+                //var news = (from bau in _dbContext.MEDEEs
+                //             select new MedeeModel
+                //             {
+                //                 ID = bau.ID,
+                //                 TITLE = bau.TITLE,
+                //                 DESCRIPTION = bau.DESCRIPTION,
+                //                 FEATURETXT = bau.FEATURETXT,
+                //                 IMG = bau.IMAGE
+                //             }).ToList();
 
-                return ReturnResponse.ObjectResult(news);
+                var list = _dbContext.MEDEEs.ToList();
+
+                return ReturnResponse.ObjectResult(list);
+            }
+            catch (Exception ex)
+            {
+                return ReturnResponse.InvalidResult(ex);
+            }
+        }
+
+        /// <summary> 
+        /// elselt awah
+        /// </summary>
+        [HttpPost]
+        [Route("elselt")]
+        [AllowAnonymous]
+        public async Task<ResponseClient> setElselt([FromBody] ElseltModel model)
+        {
+            try
+            {
+                var elselt = _dbContext.ELSELTs.Add( new ELSELT
+                {
+                    LASTNAME = model.lastname,
+                    FIRSTNAME = model.firstname,
+                    AGE = model.age,
+                    HEIGHT = model.height,
+                    WEIGHT = model.weight,
+                    EMAIL = model.email,
+                    PHONENUMBER = model.phonenumber,
+                    ADDRESS = model.address,
+                    DISTRICT = model.district,
+                    RDNUMBER = model.rdnumber,
+                    RELATION = model.relation,
+                    RELATIONNAME = model.relationname,
+                    RELATIONPHONENUMBER = model.relationphonenumber,
+                    MALE = model.male,
+                });
+
+                _dbContext.SaveChanges();
+
+                return ReturnResponse.SuccessResponse();
             }
             catch (Exception ex)
             {

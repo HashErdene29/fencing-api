@@ -22,6 +22,7 @@ namespace NewsApi.Context
         }
         #region Sets
         public virtual DbSet<MEDEE> MEDEEs { get; set; }
+        public virtual DbSet<ELSELT> ELSELTs { get; set; }
         #endregion
 
         #region Functions

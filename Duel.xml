@@ -4,14 +4,54 @@
         <name>Hackathon</name>
     </assembly>
     <members>
-        <member name="M:NewsApi.Controllers.WebController.getNewsAll">
-            <summary> 
-            news list
+        <member name="M:NewsApi.Controllers.WebController.Register(NewsApi.Models.AuthModels.RegisterModel)">
+            <summary>
+            Login 
             </summary>
         </member>
-        <member name="M:NewsApi.Controllers.WebController.setElselt(NewsApi.Models.ElseltModels.ElseltModel)">
+        <member name="M:NewsApi.Controllers.WebController.Login(NewsApi.Models.AuthModels.LoginModel)">
+            <summary>
+            Login 
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.WebController.VerifyingUser(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile},Microsoft.AspNetCore.Http.IFormFile,NewsApi.Models.UserModels.UserVerify)">
+            <summary>
+            user list 
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.WebController.getBannerAll">
             <summary> 
-            elselt awah
+            category list
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.WebController.AddBanner(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile},NewsApi.Models.FilterModels.AddBannerModel)">
+            <summary>
+            add banner
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.WebController.getUserAll">
+            <summary>
+            user list 
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.WebController.getCategoryAll">
+            <summary> 
+            category list
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.WebController.addCategory(Microsoft.AspNetCore.Http.IFormFile,Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Login 
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.WebController.CreateOrder(Microsoft.AspNetCore.Http.IFormFile,NewsApi.Models.CategoryModels.CreateOrderModel)">
+            <summary>
+            Login 
+            </summary>
+        </member>
+        <member name="M:NewsApi.Controllers.WebController.ScorePut(System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            Mobile	Tuhain asuulgad onoo uguh 
             </summary>
         </member>
         <member name="P:NewsApi.Utils.JwtIssuerOptions.Issuer">

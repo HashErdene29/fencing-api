@@ -18,11 +18,10 @@ namespace NewsApi
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseUrls("http://10.0.10.22:8881")
+                .UseUrls("http://192.168.1.61:8881")
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
-
             host.Run();
         }
     }
